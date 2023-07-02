@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Varta;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+body{
+    background: #010719;
+    overflow: hidden;
+}
+.wrapper{
+    height: 80vh;
+    width: 90vw;
+    border-radius: 25px;
+    background: #fffbaf;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#click_detect{
+    height: 80vh;
+    width: 90vw;
+    border-radius: 25px;
+    background: #fffbaf;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: #010719;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.red{
+    color: red;
+    animation: blinker .32s linear infinite;
+}
+
+@keyframes blinker {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .15;
+    }
+}
+@font-face {
+    font-family: Varta;
+    src:local("../src/Varta-reg.ttf");
+}
