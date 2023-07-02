@@ -16,7 +16,7 @@ active = true
 async function signal(){
         rnd_pause = getRandomPause(2000,4000)
         await sleep(rnd_pause)
-        var audio = new Audio(`../src/start-sound/${startPistolType}.mp3`)
+        var audio = new Audio(`./src/start-sound/${startPistolType}.mp3`)
         audio.play()
         start_stamp = Date.now()
 }
@@ -54,7 +54,7 @@ async function logic(){
             h1.innerHTML = String(end_stamp-start_stamp) + "ms"
             if(end_stamp-start_stamp <=100) {
                 h1.classList.add("red")
-                var audio = new Audio(`../src/start-sound/${startPistolType}.mp3`)
+                var audio = new Audio(`./src/start-sound/${startPistolType}.mp3`)
                 await sleep(getRandomPause(200,400))
                 audio.play()
                 await sleep(getRandomPause(100,300))
